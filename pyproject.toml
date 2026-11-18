@@ -1,0 +1,54 @@
+[build-system]
+requires = ["maturin>=1.9,<2"]
+build-backend = "maturin"
+
+[project]
+name = "docfgp-office"
+version = "1.0.0"
+description = "DocFGP Office provides the office2pdf converter DocFGP uses to convert DOCX and PPTX files."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+keywords = ["docfgp", "docx", "office2pdf", "pdf", "pptx"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.11", "mypy>=1.15", "maturin>=1.9,<2"]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4"
+
+[tool.maturin]
+python-source = "src"
+module-name = "docfgp_office._native"
+features = ["pyo3/extension-module"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "D", "C90", "N", "SIM", "RET", "C4", "PL", "FBT", "PT", "PERF"]
+ignore = ["D203", "D213", "D413", "SIM905"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["PLR2004"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 8
+
+[tool.ruff.lint.pylint]
+max-args = 5
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src/docfgp_office"]
+ignore_missing_imports = true

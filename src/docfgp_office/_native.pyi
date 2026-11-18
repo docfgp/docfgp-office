@@ -1,0 +1,3 @@
+from os import PathLike
+
+def office_to_pdf(path: str | PathLike[str]) -> bytes: ...
