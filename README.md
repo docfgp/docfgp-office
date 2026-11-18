@@ -2,10 +2,10 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/docfgp-office)](https://pypi.org/project/docfgp-office/)
 [![PyPI downloads](https://img.shields.io/pepy/dt/docfgp-office)](https://pepy.tech/projects/docfgp-office)
-[![CI](https://github.com/iamzices/docfgp-document-fingerprint-office/actions/workflows/ci.yml/badge.svg)](https://github.com/iamzices/docfgp-document-fingerprint-office/actions/workflows/ci.yml)
-[![License: Apache-2.0](https://img.shields.io/github/license/iamzices/docfgp-document-fingerprint-office)](LICENSE)
+[![CI](https://github.com/docfgp/docfgp-office/actions/workflows/ci.yml/badge.svg)](https://github.com/docfgp/docfgp-office/actions/workflows/ci.yml)
+[![License: Apache-2.0](https://img.shields.io/github/license/docfgp/docfgp-office)](LICENSE)
 
-DocFGP Office provides the [office2pdf](https://github.com/developer0hye/office2pdf) converter that lets [DocFGP](https://github.com/iamzices/docfgp-document-fingerprint) convert DOCX and PPTX files.
+DocFGP Office provides the [office2pdf](https://github.com/developer0hye/office2pdf) converter that lets [DocFGP](https://github.com/docfgp/docfgp) convert DOCX and PPTX files.
 
 ## Requirements
 
